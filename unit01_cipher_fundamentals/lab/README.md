@@ -385,7 +385,7 @@ Implement the Python code given above.
 Using: a=21, seed=35, c=31, and m=100, prove that the sequence gives 66 17 88 79 90  
 	Does it generate this sequence?
 
-Yes/No
+Yes
 
 ### E.2	Determine the sequence for:
 
@@ -393,7 +393,7 @@ a=22, seed=35, c=31, and m=100.
 
 First four numbers of sequence?
 
-
+1 53 97 65
 
 
 ### E.3	

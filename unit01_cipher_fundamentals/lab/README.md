@@ -64,6 +64,7 @@ In Python, this is:
 print (53431 % 453)
 ```
 
+Result: 430
 
 ### A.6	Bitwise operations
 Using Python, what is the results of the following:
@@ -74,8 +75,10 @@ print (0x43 & 0x21)
 print (0x43 ^ 0x21)
 ```
 
-In this case, "|" does a bitwise OR, "&" does a bitwise AND, and "^" does a bitwise X-OR. Using a pen and paper, prove that these results are correct.	Results:
+In this case, "|" does a bitwise OR, "&" does a bitwise AND, and "^" does a bitwise X-OR. Using a pen and paper, prove that these results are correct.	
 
+Results:
+97, 1, 98
 
 ### A.7	Hex, Oct, Char and Binary
 Using Python, what is the hex, octal, character, and binary equivalents of the value of 93:
@@ -90,6 +93,11 @@ print ("Char:\t",chr(val1))
 ```
 
 Results:
+Dec:	 93
+Bin:	 0b1011101
+Hex:	 0x5d
+Oct:	 0o135
+Char:	 ]
 
 ### A.8	Node.js
 JavaScript is often used in cryptography. Using node.js, repeat A.7.
@@ -108,6 +116,10 @@ node a_08.js
 </pre>
 
 Results:
+1011101
+5d
+135
+]
 
 
 ### A.9	Base64
@@ -119,12 +131,15 @@ str='crypto'
 print (base64.b64encode(str.encode()))
 ```
 
-Result:
+Result: b'Y3J5cHRv'
 
 
 ### A.10 Base64
 If we use a string of "crypto1", what do you observe from the Base64 conversion compared to the result in the previous question (A.9)?	
-Observation:
+
+Result: b'Y3J5cHRvMQ=='
+
+Observation: addition of 'Q' but also padded by the '==', to indicate there is 1 byte of padding in the addition of 'Q'. 
 
 
 ### A.11 Bit shift
@@ -134,23 +149,26 @@ Web link (Bit shift): https://asecuritysite.com/comms/shift
 
 Decimal form:     41
 
-Shift left (1):	
+Shift left (1):	82
 
-Shift left (2):	
+Shift left (2):	164
 
-Shift right(1):	
+Shift right(1):	20
 
-Shift right(2):
+Shift right(2): 10
 
 Why would a shift left or shift right operator not be used on its own in cryptography?
 
+It is simply a multiplication/division. 
+
 
 ### A.12 Factors
-In several cases in cryptography, we try and factorize a value into its factors. An example is 15, and which has factors of 5 and 3. Using the Python program defined in the following link, determine the factors of 432:
+In several cases in cryptography, we try and factorize a value into its factors. An example is 15, and which has factors of 5 and 3. Using the Python program defined in the following link, determine the factors of 432: 2 x 2 x 2 x 2 x 3 x 3 x 3
 
 Web link (Factorization): https://asecuritysite.com/encryption/factors
 
 Think of two extremely large values and determine their factors.
+45,345,345,248,245,424,642,787,896,753,759 = 103 x 11,633 x 37,844,586,123,211,106,538,052,441
 
 
 ### A.13 Compression
@@ -159,6 +177,20 @@ Another format we can use for our data is compression, and we can do the compres
 Web link (Compression): https://asecuritysite.com/encryption/gzip
 
 Take a string of “abc” and compress it, and now keep building up the string with the same sequence (such as “abcabc…”). What do you observe from the length of the compression string if you use a random characters of the same length as an input:
+
+('abc' repeated 1-6 times, then 30, then 60):
+
+eJxLTEoGAAJNASc=
+eJxLTEpOTEoGAAgMAk0=
+eJxLTEpOBCMAET0Dcw==
+eJxLTEpOhCEAHeAEmQ==
+eJxLTEpOREIALfUFvw==
+eJxLTEpOREUAQXwG5Q==
+
+eJxLTEpOpA0CACAWInU=
+
+eJxLTEpOHGoIAF2oROk=
+
 	
 <pre>
 eJzzyc9Lyc8DAAgpAms=
@@ -173,15 +205,15 @@ Web link (GCD):	http://asecuritysite.com/encryption/gcd
 
 ### B.1	Write a Python program to determine the GCD for the following:
 
-4105 and 10: 
+4105 and 10: 5
 
-4539 and 6:
+4539 and 6: 3
 
 ### B.2	Two numbers are co-prime if they do not share co-factors, apart from 1, which is gcd(a,b)=1.
 
 Determine if the following values are co-prime:
 
-5435 and 634: Yes/No
+5435 and 634: Yes
 
 ## C	Modulus and Exponentiation
 The mod operator results in the remainder of an integer divide. For example, 31 divided by 8 is 3 remainder 7, thus 31 mod 8 equals 7. Often in cryptography the mod operation uses a prime number, such as:

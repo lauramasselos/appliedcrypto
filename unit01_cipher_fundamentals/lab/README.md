@@ -282,11 +282,11 @@ where k=0 gives 0 and 1, k=1 gives 5 and 7, k=2 gives 11 and 13, k=3 gives 17 an
 Web link (Prime Numbers):	http://asecuritysite.com/encryption/isprime
 
 ### D.1	Using the equation of 6k ± 1. Determine the prime numbers up to 100:
-Prime numbers:
+Prime numbers: [5, 7, 11, 13, 17, 19, 23, 25, 29, 31, 35, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97]
 
 
 ### D.2	Implement a Python program which will calculate the prime numbers up to 1000:
-	Define the highest prime number generated:
+	Define the highest prime number generated: 997
 
 
 A prime sieve creates all the prime numbers up to a given limit. It progressively removes composite numbers until it only has prime numbers left, and it is the most efficient way to generate a range of prime numbers. The following provides a fast method to determine the prime numbers up to a give value (test):
@@ -315,13 +315,13 @@ print (sieve_for_primes_to(test))
 
 
 ### D.3	Implement the Python code given above and determine the highest prime number possible in the following ranges:
-	Up to 100:
+Up to 100: 97
 
-Up to 1,000:
+Up to 1,000: 997
 
-Up to 5,000:
+Up to 5,000: 4999
 
-Up to 10,000:
+Up to 10,000: 9973
 
 
 The Miller-Rabin Test for Primes is an efficient method in testing for a prime number. Access the following page and download the Python script. 
@@ -333,15 +333,15 @@ Using this determine the following:
 
 ### D.4	Prime numbers
 Which of the following numbers are prime numbers:
-Is 5 prime? Yes/No
+Is 5 prime? Yes
 
-Is 7919 prime? Yes/No
+Is 7919 prime? Yes
 
-Is 858,599,509 prime? Yes/No
+Is 858,599,509 prime? Yes
 
-Is 982,451,653 prime? Yes/No
+Is 982,451,653 prime? Yes
 
-Is 982,451,652 prime? Yes/No
+Is 982,451,652 prime? No
 
 
 

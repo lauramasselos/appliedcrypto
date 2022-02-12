@@ -403,6 +403,8 @@ a=954,365,343, seed=436,241, c=55,119,927, and m=1,000,000.
 
 First four numbers of sequence?
 
+677390 236697 942598 561441
+
 
 ### E.4	
 Determine the sequence for:
@@ -411,6 +413,7 @@ a=2,175,143, seed=3553, c=10,653, and m=1,000,000.
 
 First four numbers of sequence?
 
+293732 114329 934700 172753
 
 ## F	What I should have learnt from this lab?
 The key things learnt:
